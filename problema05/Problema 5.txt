@@ -1,0 +1,25 @@
+1. Inicio 
+2. nombreEstudiante, x(50)[{A-Z}, {a-z}, {BS}]
+3. promedioCiclo, d[0-n]
+4. contador, i[0-n]
+5. registro ,x (50)[{az},{AZ},{BS}]
+6. mensaje ,x (500)[{az},{AZ},{BS}]
+
+7. Mientras contador >= 7 entonces
+
+8.   << "Ingrese el nombre del estudiante"
+9.   >>nombreEstudiante
+
+10.  << "Ingrese el promedio del ciclo"
+11.  >>promedioCiclo
+
+12.  Si promedio >= entonces 
+13.  registro <-- "Aprobado"
+14.  De lo contrario 
+15.  registro <-- "Reprobado"
+16.  Fin si
+17.  mensaje <-- mensaje + nombre + "\t" + promedio + "\t" + registro + "\n"
+18.  contador <-- contador + 1
+19. Fin Mientras 
+20. <<mensaje
+21. Fin

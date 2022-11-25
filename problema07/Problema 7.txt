@@ -1,0 +1,16 @@
+1. Inicio
+2. contador,i [0-n] 
+3. signo,x (1)[+,-] 
+4. mensaje,x (500)[+,-]
+
+5. Mientras contador <= 10 entonces
+6. 	 Si contador MOD 2 = 0
+7. 		 signo <-- "+"
+8. 	 De lo contrario 
+9.		 singo <-- "-"
+10.	 Fin Si
+11.	 mensaje <-- mensaje +  signo + "1/" + contador
+12. 	 contador <-- contador + 1
+13. Fin Mientras
+14. << mensaje
+15. Fin

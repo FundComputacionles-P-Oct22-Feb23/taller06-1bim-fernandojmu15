@@ -1,0 +1,35 @@
+1.  Inicio
+2.  nombreCliente,x (50)[{a-z},{A-Z},{BS}]	
+3.  costoComputadora,d [0,n] 
+4.  total,d [0,n] 
+5.  descuento,i [0,n] 
+6.  mensaje,x (50)[{a-z},{A-Z},{BS}] 
+7.  opcion,i [0,n]  
+8.  contador,i [0,n] 
+
+9.  Mientras contador <= 7 entonces
+
+10. 	 << "Ingrese el nombre del cliente"
+11.	 >> nombreCliente 
+12. 	 << "Ingrese el tipo de cliente que es 1 o 2"
+13.	 >>opcion
+14. 	 << "Ingrese el costo de la computadora"
+15.	 >>costoComputadora
+16. 	 Si opcion == 1 or == 2 entonces
+17. 		Si opcion == 1
+18. 			descuento <-- 10
+19.			tipo <-- "cliente tipo 1,"
+20. 		De lo contrario
+21.			descuento <-- 20
+22.			tipo <-- "cliente tipo 2,"
+23. 		Fin Si
+24. 		descuento <-- (costo * descuento)/100 
+25. 		total <-- costo - descuento		
+26.	 De lo contrario
+27. 	 	total <-- costo	
+28. 	 Fin Si
+28. 	 mensaje <-- mensaje + nombreCliente + tipo + " compra una computadora con precio " + "$" + total + "\n"
+29. 	 contador <-- contador + 1
+30. Fin Mientras
+31. <<mensaje
+32. Fin

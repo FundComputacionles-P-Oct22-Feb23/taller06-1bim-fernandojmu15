@@ -1,0 +1,47 @@
+1.  Inicio
+2.  nombre, x(50)[{a-z},{A-Z},{BS}] <-- ""	
+3.  posicionCampo, x(50)[{a-z},{A-Z},{BS}] <-- ""
+4.  edad, i[0,n] 
+5.  estatura, d[0,n] 
+6.  mensaje, x(5000)[{a-z},{BS}] <-- ""		
+7.  bandera, l <-- true
+8.  opcion, x(1)[a-z]
+9.  sumaEdades, d[0,n] 
+10. sumaEstaturas, d[0,n] 
+11. totalEdades, d[0,n]
+12. totalEstaturas, d[0,n] 
+13. divicion, i[0,n]
+
+14. Mientras bandera == true entonces
+15. 	<< "Ingrese el nombre del jugador"
+16.	>> nombre 
+
+17. 	<< "Ingrese la edad del jugador"
+18.   >> edad
+
+19. 	<< "Ingrese la posición del jugador en el campo de juego"
+20.   >> posicion
+
+21. 	<< "Ingrese la estatura del jugador"
+22.   >> estatura
+ 	
+23. 	mensaje <-- mensaje + nombre + " " + "-" + posicion + "-, " + "edad " + edad + ", estatura " + estatura + "\n"
+
+24.	sumaEdades <-- SumaEdades + edad
+25. 	sumaEstaturas <-- sumaEestaturas + estatura
+26.	divicion <-- divicion + 1
+
+27. 	<< "Si desea terminar el proceso, ingrese s de salir"
+28. 	>> opcion
+29.	Si opcion == "s" entonces
+30.		bandera <-- false
+31.	Fin Si
+
+32. Fin Mientras
+33. totalEdades <-- sumaEdades/divicion
+34. totalEstaturas <-- sumaEstaturas/divicion 
+
+35. mensaje <-- mensaje + "Promedio de edades: " + totalEdades + "\n" + "PromedioEstaturas: " + totalEstaturas + "\n" 
+
+36. << mensaje
+37. Fin

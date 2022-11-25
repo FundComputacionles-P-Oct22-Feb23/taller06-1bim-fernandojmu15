@@ -1,0 +1,24 @@
+1. Inicio
+2. nombre, x(50)[{A-z}, {a-z}, {BS}]
+3. diasTrabajados, i [0,n]
+4. costoDia, d [0,n] 
+5. totalPagar, d [0,n] 
+6. mensaje, x(500)[{a-z},{BS}] 	
+7. contador, i [0,n] <-- 1
+
+8. Mientra contador <= 5 entonces
+9.    <<Ingrese su nombre
+10.   >>nombre
+
+11.   <<Ingrese los dias que trabajo
+12.   >>diastrabajados 
+
+13.   <<Ingrese el costo del dia de trabajo
+14.   >>costoDia
+
+15.   totalPagar <-- diasTrabajados * costoDia 
+16.   mensaje <-- mensaje + nombre + "\t" + diasTrabajados + "\t" + costoDia + "\t" + totalPagar + "\n"
+17.   contador <-- contador + 1
+18. Fin Mientras
+19. <<mensaje 
+20. Fin 
